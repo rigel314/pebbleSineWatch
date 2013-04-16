@@ -27,7 +27,8 @@ void wave_update_callback(Layer *me, GContext* ctx) {
 
   for(int i=0;i<129;i++)
   {// I use 129 pixels here because 128 divides perfectly into the number of samples in the sine lookup table.  The 129th data point is to have the same value as the 0th on the half hour.
-    p1 = GPoint(144/2+sin_lookup(i*(128*(Ctime.tm_hour%12+1) + 4.27*Ctime.tm_min))/1000,168-i-1);
+    p1 = GPoint(144/2+sin_lookup(i*(256*(Ctime.tm_hour%12) + 4.27*Ctime.tm_min))/1000,168-i-1);
+    //p1 = GPoint(144/2+sin_lookup(i*(256*(0) + 4.27*Ctime.tm_min))/1000,168-i-1);
     graphics_draw_line(ctx, p0, p1);
     p0 = p1;
 
