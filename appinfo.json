@@ -1,0 +1,17 @@
+{
+	"uuid": "83383FEC-6E06-45E8-B852-06E1F0A627F3",
+	"shortName": "Sine Wave",
+	"longName": "Sine Wave Watch",
+	"companyName": "Computing Eureka",
+	"versionCode": 2,
+	"versionLabel": "2.0.0",
+	"watchapp": {
+		"watchface": true
+	},
+	"appKeys": {
+		"dummy": 0
+	},
+	"resources": {
+		"media": []
+	}
+}
